@@ -1,3 +1,12 @@
+/* Base CSS: Smallest screen first*/
 img {
   max-width: 100%;
+}
+
+/* Larger Screen: 50ems
+   1em = 16px (In most browsers)
+*/
+@media screen and (min-width: 50em) {
+  /* styles */
+  
 }
