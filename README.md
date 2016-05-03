@@ -16,5 +16,6 @@ URL: http://andrewgurung.github.io/
 
 Context
 -------
-Responsive Web Design with HTML5 and CSS3
+Responsive Web Design with HTML5 and CSS3  
 By Ben Frain
+
