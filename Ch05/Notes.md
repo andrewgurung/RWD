@@ -56,8 +56,27 @@ happiness. All you need to do is eat lots of scones.</p>
 }
 ```
 
-### Feature forks in CSS
+## Feature forks in CSS
+- If/else condition where if a browser supports a feature display a certain chunk of code, if not display something else.
 
 Two possible approaches:
 1. Purely based on CSS: Fewer browser implementations
 2. JavaScript library: Broader support
+
+### Feature queries
+- Native solution to forking code in CSS
+- Similar in syntax to `media queries`
+
+```css
+@supports (display: flex  and (pointer: coarse)  or (transform: translate3d(0, 0, 0)) {
+  .Item {
+    display: inline-flex;
+  }
+}
+
+@supports not (display: flex) {
+  .Item {
+    display: inline-block;
+  }
+}
+```
