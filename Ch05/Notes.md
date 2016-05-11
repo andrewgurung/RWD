@@ -60,6 +60,7 @@ happiness. All you need to do is eat lots of scones.</p>
 - If/else condition where if a browser supports a feature display a certain chunk of code, if not display something else.
 
 Two possible approaches:
+
 1. Purely based on CSS: Fewer browser implementations
 2. JavaScript library: Broader support
 
@@ -79,4 +80,41 @@ Two possible approaches:
     display: inline-block;
   }
 }
+```
+
+### Modernizr
+- Until `@supports` is more widely supported, we can use `Modernizr`
+https://modernizr.com/
+
+1. Modernizr JavaScript support
+```js
+$(document).ready(function()
+{
+  if (Modernizr.websockets)
+  {
+    $("#result").html('Your browser has support for Web Sockets');
+  }
+  else
+  {
+    $("#result").html('Your browser does not support Web Sockets');
+  }
+});
+```
+
+2. Modernizr CSS support
+
+```css
+div.wsno, div.wsyes { display: none }
+.no-websockets div.wsno { display: block }
+.websockets div.wsyes { display: block }
+```
+
+```html
+<div class="wsno">
+  Your browser does not support WebSockets.
+</div>
+
+<div class="wsyes">
+  Your browser supports WebSockets.
+</div>
 ```
