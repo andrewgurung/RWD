@@ -55,3 +55,9 @@ happiness. All you need to do is eat lots of scones.</p>
  white-space: no-wrap;
 }
 ```
+
+### Feature forks in CSS
+
+Two possible approaches:
+1. Purely based on CSS: Fewer browser implementations
+2. JavaScript library: Broader support
