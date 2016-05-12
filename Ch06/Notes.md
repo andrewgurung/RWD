@@ -43,6 +43,11 @@ box-shadow: inset 0 0 40px #000;
 ```
 
 ### Background gradients
+- background-size:
+1. auto: Which sets the element at its native size
+2. cover: Which expands the image, preserving its aspect ratio, to cover the area of the element
+3. contain: Which expands the image to fit its longest side within the element while preserving the aspect ratio
+
 ```css
 /* Display liner gradient (top, bottom) */
 background: linear-gradient(red, gold);
@@ -63,10 +68,16 @@ background: repeating-radial-gradient(black 0px, orange 5px, red 10px);
 /* Multiple backgrounds
   + Multiple background sizes */
 background: url('../img/1.png'), url('../img/2.png'), url('../img/3.png');
-background-size: 60% 50%, 300px 400px, auto;
+background-size: 60% 50%, 50vw, cover;
+background-position: top 50px right 80px, 40px 40px, top center;
 
-
-
-
-
+/* High-resolution background images */
+.bg {
+  background-image: url('bg.jpg');
+}
+@media (min-resolution: 1.5dppx) {
+ .bg {
+   background-image: url('bg@1_5x.jpg');
+ }
+}
 ```
