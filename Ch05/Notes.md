@@ -136,3 +136,29 @@ img[alt] { /* All images with alt attribute*/
   Eg: img[alt*="film"]
 3. 'ending with' substring matching attribute selector
   Eg: img[alt$="film"]
+
+------------
+
+## CSS3 structural pseudo-classes
+```css
+/* Introduced in CSS 2.1 */
+div:first-child {
+}
+
+/* Introduced in CSS 3 */
+div:last-child {
+}
+
+/* Select all odd links */
+div:nth-child(odd) {  
+}
+
+/* Select all even links*/
+div:nth-child(even) {  
+}
+
+
+/* Select any (n) parameter */
+div:nth-child(3) {  
+}
+```
