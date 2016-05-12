@@ -173,10 +173,41 @@ div:nth-child(3) {
 <div class="vehicle"></span>
 */
 .vehicle:nth-of-type(2n) {
-  /* Div types aren't selected in this example*/
+  /* Div types aren't selected in this example */
 }
 
 /* Select from a specific type/class */
 .vehicle:nth-last-of-type(2n) {
+}
+
+/* negation selector */
+:not(p) {
+}
+
+/* Select if an element is empty
+<div class="vehicle"></div>
+*/
+.vehicle {
+  background-color: indigo;
+}
+.vehicle:empty{
+  display:none
+}
+```
+
+## CSS custom properties and variables
+
+```css
+/*  :root pseudo-class always references the top-most parent element in a document structure */
+:root {
+ --MainFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+```
+
+Reference later using `var()`
+
+```css
+.Title {
+ font-family: var(--MainFont);
 }
 ```
