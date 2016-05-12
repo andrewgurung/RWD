@@ -211,3 +211,23 @@ Reference later using `var()`
  font-family: var(--MainFont);
 }
 ```
+
+## CSS calc
+```css
+.thing {
+  width: calc(50% - 10px);
+}
+```
+
+## Responsive viewport-percentage lengths (vmax, vmin, vh, vw)
+- vw unit (for viewport width)
+- vh unit (for viewport height)
+- vmin unit (for viewport minimum; equal to the smaller of either vw or vh)
+- vmax (viewport maximum; equal to the larger of either vw or vh)
+
+Modal window that's 90% of browser height:
+```css
+.modal {
+  height: 90vh;
+}
+```
