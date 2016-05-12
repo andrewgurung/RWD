@@ -118,3 +118,21 @@ div.wsno, div.wsyes { display: none }
   Your browser supports WebSockets.
 </div>
 ```
+--------------
+
+## New CSS3 selectors
+
+### Attribute selector
+
+```css
+img[alt] { /* All images with alt attribute*/
+  border: 3px dashed #e15f5f;
+}
+```
+
+1. 'beginning with' substring matching attribute selector
+  Eg: img[alt^="film"]
+2. 'contains an instance of' substring matching attribute selector
+  Eg: img[alt*="film"]
+3. 'ending with' substring matching attribute selector
+  Eg: img[alt$="film"]
