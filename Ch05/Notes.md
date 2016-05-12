@@ -161,4 +161,12 @@ div:nth-child(even) {
 /* Select any (n) parameter */
 div:nth-child(3) {  
 }
+
+/* Select from a specific type/class */
+.vehicle:nth-of-type(2n) {
+}
+
+/* Select from a specific type/class */
+.vehicle:nth-last-of-type(2n) {
+}
 ```
