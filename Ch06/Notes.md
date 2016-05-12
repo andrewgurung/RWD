@@ -41,3 +41,32 @@ box-shadow: inset 0 0 40px #000;
  box-shadow: 0 10px 10px 10px;
 }
 ```
+
+### Background gradients
+```css
+/* Display liner gradient (top, bottom) */
+background: linear-gradient(red, gold);
+
+/* diagonal */
+background: linear-gradient(to top right, red, gold);
+
+/* Use degrees */
+background: linear-gradient(45deg, red, gold);
+
+/* Circular gradient */
+background: radial-gradient(12rem circle at center, yellow, orange, red);
+
+/* Repeating circles
+pixel distances between the black, orange, and red colors (0px, 5px, and 10px respectively) */
+background: repeating-radial-gradient(black 0px, orange 5px, red 10px);
+
+/* Multiple backgrounds
+  + Multiple background sizes */
+background: url('../img/1.png'), url('../img/2.png'), url('../img/3.png');
+background-size: 60% 50%, 300px 400px, auto;
+
+
+
+
+
+```
