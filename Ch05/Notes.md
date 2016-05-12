@@ -231,3 +231,25 @@ Modal window that's 90% of browser height:
   height: 90vh;
 }
 ```
+
+## Web typography
+Different formats of fonts:
+1. Embedded OpenType (files with an .eot extension): Internet Explorer's choice
+2. TrueType (.ttf file extension): More commonly used
+3. Web Open Font Format (.woff / .woff2 extension)
+4. SVGs
+
+### Implementing web fonts with `@font-face`
+```css
+@font-face {
+  font-family: 'robotoregular';
+  src: url('fonts/Roboto-Regular-webfont.eot');
+  src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Roboto-Regular-webfont.woff') format('woff'), url('fonts/Roboto-Regular-webfont.ttf') format('truetype'), url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+ font-family: robotoregular;
+}
+```
