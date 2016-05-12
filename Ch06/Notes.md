@@ -70,6 +70,8 @@ background: repeating-radial-gradient(black 0px, orange 5px, red 10px);
 background: url('../img/1.png'), url('../img/2.png'), url('../img/3.png');
 background-size: 60% 50%, 50vw, cover;
 background-position: top 50px right 80px, 40px 40px, top center;
+background-repeat: no-repeat;
+
 
 /* High-resolution background images */
 .bg {
@@ -79,5 +81,53 @@ background-position: top 50px right 80px, 40px 40px, top center;
  .bg {
    background-image: url('bg@1_5x.jpg');
  }
+}
+```
+
+## CSS filters
+
+```css
+/* Apply matching shape drop shadow instead of a square box-shadow */
+filter: drop-shadow(8px 8px 6px #333);
+
+.filter-blur {
+ filter: blur(2px);
+}
+
+.filter-brightness {
+  filter: brightness(2); /* value from 0 to 1 or 0% to 100%. Anything beyond raises brightness */
+}
+
+.filter-contrast {
+	filter: contrast(2);  /* value from 0 to 1 or 0% to 100%. Anything beyond raises contrast. */
+}
+
+.filter-grayscale {
+	filter: grayscale(.8); /* value from 0 to 1 or 0% to 100%. 1 would be fully grayscale */
+}
+
+.filter-hue-rotate {
+	filter: hue-rotate(25deg); /*  Rotate 0 and 360 degrees to change the color wheel.*/
+}
+
+.filter-invert {
+	filter: invert(75%); /* value from 0 to 1 or 0% to 100%. */
+}
+
+.filter-opacity {
+	filter: opacity(50%); /* value from 0 to 1 or 0% to 100%. */
+}
+
+.filter-saturate {
+	filter: saturate(15%); /* value from 0 to 1 or 0% to 100%. Anything beyond raises saturation. */
+}
+
+.filter-sepia {
+	filter: sepia(.75); /* value from 0 to 1 or 0% to 100%. */
+}
+
+/* Combining multiple filters */
+.MultipleFilters {
+ filter: opacity(10%) blur(2px) sepia(35%);
 }
 ```
