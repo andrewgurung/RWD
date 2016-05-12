@@ -162,8 +162,18 @@ div:nth-child(even) {
 div:nth-child(3) {  
 }
 
-/* Select from a specific type/class */
+/* Select from a specific type/class whichever is selected first
+<span class="vehicle"></span>
+<span class="vehicle"></span>   ==> Selected
+<span class="vehicle"></span>
+<span class="vehicle"></span>   ==> Selected
+<div class="vehicle"></span>
+<div class="vehicle"></span>
+<div class="vehicle"></span>
+<div class="vehicle"></span>
+*/
 .vehicle:nth-of-type(2n) {
+  /* Div types aren't selected in this example*/
 }
 
 /* Select from a specific type/class */
