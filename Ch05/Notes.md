@@ -253,3 +253,52 @@ body {
  font-family: robotoregular;
 }
 ```
+
+## New CSS3 color formats and alpha transparency
+Ways to declare color:
+1. RGB-Red/Green/Blue: (along side alpha channel RGBA)
+2. HSL-Hue/Saturation/Lightness: (along side alpha channel HSLA)
+
+###Traditional HEX value:
+```css
+.redness {
+  color: #fe0208;
+}
+```
+
+###RGB value:
+```css
+.redness {
+  color: rgb(254, 2, 8);
+}
+```
+
+###HSL value:
+- HSL is represented as a color wheel (360 degree)
+- Easier to predict color
+- https://www.w3.org/wiki/CSS/Properties/color/HSL
+- Mnemonics: Yellow - Green - Cyan - Blue - Magento - Red [Young Guys Can Be Messy Rascals]
+```css
+.redness {
+  color: hsl(359, 99%, 50%);
+}
+```
+
+###Alpha channels
+- Used to achieve a `see through` effect. Value ranges from 0-1
+- O: Completely transparent
+- 1: Completely opaque
+
+RGBA value:
+```css
+.redness-alpha-rgba {
+ color: rgba(255, 255, 255, 0.8);
+}
+```
+
+HSLA value:
+```css
+.redness-alpha {
+ color: hsla(359, 99%, 50%, .5);
+}
+```
