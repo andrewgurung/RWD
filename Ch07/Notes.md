@@ -25,7 +25,7 @@
   background-image: url('image.svg');
   ```
 
-## Inserting an SVG inline
+4. Inserting an SVG inline
 - As SVG is merely an XML document, you can insert it directly into the HTML.
 
   ```html
@@ -40,4 +40,4 @@
        </svg>
      </span>
   </div>
-```
+  ```
