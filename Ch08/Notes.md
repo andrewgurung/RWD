@@ -24,4 +24,11 @@ a {
 a:hover {
   box-shadow: inset 0 -3px 0 #CC3232;
 }
+
+/*  multiple properties transition*/
+.style {
+ /* ...(more styles)... */
+ transition-property: border, color, text-shadow;
+ transition-duration: 2s, 3s, 8s;
+}
 ```
