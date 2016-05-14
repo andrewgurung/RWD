@@ -32,3 +32,12 @@ a:hover {
  transition-duration: 2s, 3s, 8s;
 }
 ```
+
+### Transform
+```css
+/* Enlarge elements */
+transform: scale(1.4);
+
+/* Shrink elements */
+transform: scale(0.5);
+```
