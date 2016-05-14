@@ -59,3 +59,21 @@
     </select>
   </datalist>
   ```
+
+## HTML5 input types
+
+1. email [type="email"]
+  - Supporting browsers expect a user input that matches the syntax of an e-mail
+  ```html
+  <input type="email" placeholder="john.doe@gmail.com" required>
+  ```
+
+2. number [type="number"]
+  - Displays spinner controls (click up or down to alter the value input)
+  - `min` and `max` ranges can be set
+  - `step` is the interval at which the number is changed
+  ```html
+  <input type="number" min="1929" max="2015" step="10" required>
+  ```
+
+3. 
