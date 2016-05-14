@@ -18,3 +18,9 @@
   - Display name of the `fieldset` container
 
 3. placeholder
+  - Attribute displayed by default until field gains focus
+  ```html
+  <input id="film" name="film" type="text" placeholder="e.g. King Kong" required>
+  ```
+
+4. 
