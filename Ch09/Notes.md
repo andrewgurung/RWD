@@ -76,4 +76,75 @@
   <input type="number" min="1929" max="2015" step="10" required>
   ```
 
-3. 
+3. url [type="url"]
+    ```html
+    <input id="web" name="web" type="url" placeholder="www.mysite.com">
+    ```
+
+4. tel [type="tel"]
+  - Expect telephone number
+  ```html
+  <input id="tel" name="tel" type="tel" placeholder="1-234-546758" autocomplete="off" required>
+  ```
+
+5. search [type="search"]
+  - works like a standard text input
+  ```html
+  <input id="search" name="search" type="search" placeholder= "Wyatt Earp">
+  ```
+
+6. pattern [pattern=""]
+  ```html
+  <input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA- Z]{3,30}" placeholder="Dwight Schultz" required>
+  ```
+
+7. color [type="color"]
+  - color picker in supporting browsers
+  ```html
+  <input id="color" name="color" type="color">
+  ```
+
+8. date [type="date"]
+  - Chrome and Opera supports calendar
+  ```html
+  <input id="date" type="date" name="date">
+  ```
+
+9. month [type="month"]
+  ```html
+  <input id="month" type="month" name="month">
+  ```
+
+10. week [type="week"]
+  ```html
+  <input id="week" type="week" name="week">
+  ```
+
+11. time [type="time"]
+  - 24 hr format
+  ```html
+  <input id="time" type="time" name="time">
+  ```
+
+12. range [type="range"]
+  - Code snippet to display selected value in real time as you move the slider interface
+  ```html
+  <input id="howYouRateIt" name="howYouRateIt" type="range" min="1" max="10" value="5" onchange="showValue(this.value)"><span id="range">5</span>
+  ```
+
+  ```js
+  function showValue(newValue) {
+    document.getElementById("range").innerHTML=newValue;
+  }
+  ```
+
+### Polyfill non-supporting browsers
+- Download Webshims lib (http://github.com/aFarkas/webshim/downloads)
+```html
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js-webshim/minified/polyfiller.js"></script>
+<script>
+//request the features you need:
+webshim.polyfill('forms');
+</script>
+```  
