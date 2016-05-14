@@ -148,3 +148,49 @@
 webshim.polyfill('forms');
 </script>
 ```  
+
+### Highlight label with asterisk if error
+- With this selector, when the item is hovered over, styles are applied to item general-sibling if it is at the same DOM level as item and follows it.
+  `.item:hover ~ .item-general-sibling {}`
+
+- Here, when the item is hovered over, styles are applied to item-adjacent-sibling if it is the adjacent sibling element of item (straight after it in the DOM).
+  `.item:hover + .item-adjacent-sibling {}`
+Example:
+```html
+<label for="film">The film in question?</label>
+<input id="film" name="film" type="text" placeholder="e.g. King Kong" required/>
+```
+
+Problem:
+- CSS selector can only select adjacent sibling straight after it in the DOM.
+
+Solution:
+- Write `input` tag before `label`
+- Use `Flexbox's` row-reverse or column-reverse to display the label before the input
+- But internally the underlying DOM would still have label after input. So we can use CSS selector to select the label
+
+Code Snippet:
+```html
+<input id="film" name="film" type="text" placeholder="e.g. King
+Kong" required/>
+<label for="film">The film in question?</label>
+```
+
+```css
+input:required + label:after {
+content: "*";
+font-size: 2.1em;
+position: relative;
+top: 6px;
+display: inline-flex;
+margin-left: .2ch;
+transition: color, 1s;
+}
+
+input:required:invalid + label:after {
+color: red;
+}
+input:required:valid + label:after {
+color: green;
+}
+```
