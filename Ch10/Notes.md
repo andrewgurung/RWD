@@ -86,6 +86,9 @@
 
 - Analyzing and testing web page performance
   - http://webpagetest.org
-  
+
 - Embracing faster and more effective techniques
+
 - Keeping an eye out for the next 'big' things
+  - Web components
+  - HTTP2
