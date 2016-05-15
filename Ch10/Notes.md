@@ -23,7 +23,9 @@
     }
   }
   ```
-
+- Use tools such as BrowserSync to synchronize your work
+  - http://browsersync.io/
+  
 - Embracing progressive enhancement
 - Defining a browser support matrix
 - Progressive enhancement in practice
