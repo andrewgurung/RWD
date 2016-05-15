@@ -41,7 +41,7 @@
   - Insert something in CSS that can be read by JavaScript
     Eg: `::before` or `::after` pseudo elements with different hidden content based on screen size
   - In JavaScript, read this value
-  
+
   ```CSS
   @media (min-width: 20rem) {
     body::after {
@@ -67,6 +67,11 @@
   var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
   ```  
 - Avoiding CSS frameworks in production
+  - Results in more code than actually needed
+  - From aesthetic perspective, sites end up looking similar
+  - Bootstrap (http://getbootstrap.com/)
+  - Foundation (http://foundation.zurb.com/)
+
 - Developing pragmatic solutions
 - Writing the simplest possible code
 - Hiding, showing, and loading content across viewports
