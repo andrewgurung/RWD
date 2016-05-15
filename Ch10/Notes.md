@@ -73,10 +73,19 @@
   - Foundation (http://foundation.zurb.com/)
 
 - Developing pragmatic solutions
+
 - Writing the simplest possible code
+
 - Hiding, showing, and loading content across viewports
+
 - Letting CSS do the (visual) heavy lifting
+
 - Using validators and linting tools
-- Analyzing and testing web page performance (webpagetest.org)
+  - http://validator.w3.org
+  - It will point out all errors along with line numbers, helping you to easily fix things up.
+
+- Analyzing and testing web page performance
+  - http://webpagetest.org
+  
 - Embracing faster and more effective techniques
 - Keeping an eye out for the next 'big' things
