@@ -37,6 +37,35 @@
     - Use Google Analytics to look at visitor statistics
 
 - Linking CSS breakpoints to JavaScript
+  - Invoke different JavaScript function based on CSS breakpoints
+  - Insert something in CSS that can be read by JavaScript
+    Eg: `::before` or `::after` pseudo elements with different hidden content based on screen size
+  - In JavaScript, read this value
+  
+  ```CSS
+  @media (min-width: 20rem) {
+    body::after {
+      content: "Splus"; /* Smaller screen */
+      font-size: 0;
+    }
+  }
+  @media (min-width: 47.5rem) {
+    body::after {
+      content: "Mplus"; /* Medium screen */
+      font-size: 0;
+    }
+  }
+  @media (min-width: 62.5rem) {
+  body::after {
+    content: "Lplus"; /* Large screen */
+    font-size: 0;
+    }
+  }
+  ```
+
+  ```js
+  var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+  ```  
 - Avoiding CSS frameworks in production
 - Developing pragmatic solutions
 - Writing the simplest possible code
