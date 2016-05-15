@@ -5,6 +5,25 @@
   - Style Tiles are a design deliverable consisting of fonts, colors and interface elements that communicate the essence of a visual brand for the web.
 
 - Letting the design dictate the breakpoints
+  - Always start with the smalest screen sizes upward
+  - Write the CSS for the smallest viewport first and then add any changes to different elements within media queries afterwards.
+  ```CSS
+  .rule {
+    /* Smallest viewport size styles */
+  }
+  @media (min-width: 40rem) {
+    .rule {
+    /* Medium viewport size changes */
+    }
+  }
+
+  @media (min-width: 50rem) {
+    .rule {
+    /* Larger viewport size changes */
+    }
+  }
+  ```
+
 - Embracing progressive enhancement
 - Defining a browser support matrix
 - Progressive enhancement in practice
