@@ -32,7 +32,10 @@
   - Concentrate on using elements such as main, header, footer, article, section and aside correctly
 
 - Defining a browser support matrix
-- Progressive enhancement in practice
+  - Functional parity, not aesthetic parity
+  - Choosing the browsers to support
+    - Use Google Analytics to look at visitor statistics
+
 - Linking CSS breakpoints to JavaScript
 - Avoiding CSS frameworks in production
 - Developing pragmatic solutions
