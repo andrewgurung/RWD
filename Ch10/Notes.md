@@ -25,8 +25,12 @@
   ```
 - Use tools such as BrowserSync to synchronize your work
   - http://browsersync.io/
-  
+
 - Embracing progressive enhancement
+  - Begin all front-end code with lowest common denominator
+  - Then progressively enhance code for more capable devices and browsers
+  - Concentrate on using elements such as main, header, footer, article, section and aside correctly
+
 - Defining a browser support matrix
 - Progressive enhancement in practice
 - Linking CSS breakpoints to JavaScript
